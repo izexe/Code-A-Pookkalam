@@ -26,7 +26,7 @@
 ### Project Documentation
 
 
-# Screenshots (Add at least 3)
+# Screenshots 
 ![Screenshot1](Add screenshot 1 here with proper name)
 *Add caption explaining what this shows*
 
