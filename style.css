@@ -1,0 +1,289 @@
+body {
+    background-color: beige;
+}
+
+
+h1 {
+     font-family: "Libertinus Keyboard", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.pookalam{
+    background: radial-gradient(circle, orange 30%, maroon 70%, darkgreen 100%);
+    height: 90vh;
+    width: 90vh;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .pookalam{
+        width: 80vh;
+        height: 80vh;
+    }
+}
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.pattern {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pattern {
+    width: 70%;
+    height: 70%;
+}
+
+
+/* Squares in big pattern */
+.pattern .square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(163, 107, 172, 0.689); /* greenish */
+    opacity: 0.7;
+    border-radius: 8px;
+}
+
+/* Rotate 12 big squares */
+.pattern .square:nth-child(1) { transform: rotate(0deg); }
+.pattern .square:nth-child(2) { transform: rotate(15deg); }
+.pattern .square:nth-child(3) { transform: rotate(30deg); }
+.pattern .square:nth-child(4) { transform: rotate(45deg); }
+.pattern .square:nth-child(5) { transform: rotate(60deg); }
+.pattern .square:nth-child(6) { transform: rotate(75deg); }
+.pattern .square:nth-child(7) { transform: rotate(90deg); }
+.pattern .square:nth-child(8) { transform: rotate(105deg); }
+.pattern .square:nth-child(9) { transform: rotate(120deg); }
+.pattern .square:nth-child(10) { transform: rotate(135deg); }
+.pattern .square:nth-child(11) { transform: rotate(150deg); }
+.pattern .square:nth-child(12) { transform: rotate(165deg); }
+
+.blue {
+    --radius: 300px;   /* distance from center */
+    --count: 24;       /* number of flowers */
+    position: absolute;
+    top: 50%;
+
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+}
+
+.tiny-square {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: calc(-1 * var(--radius));
+    left: calc(-15px);  /* half of width */
+    transform-origin: center var(--radius);
+}
+
+.tiny-square:nth-child(n) {
+    --i: calc(var(--n, 0));
+    transform: rotate(calc(360deg / var(--count) * (var(--i))));
+}
+
+/* Style for the flower image */
+.tiny-square img {
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.outer {
+    height: 75%;
+    width: 75%;
+    background-color: #FF8C00;
+}
+
+.pattern {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pattern.big {
+    width: 70%;
+    height: 70%;
+}
+
+
+/* Squares in big pattern */
+.pattern.big .square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(218, 18, 204); /* greenish */
+    opacity: 0.7;
+    border-radius: 8px;
+}
+
+/* Rotate 12 big squares */
+.pattern.big .square:nth-child(1) { transform: rotate(0deg); }
+.pattern.big .square:nth-child(2) { transform: rotate(15deg); }
+.pattern.big .square:nth-child(3) { transform: rotate(30deg); }
+.pattern.big .square:nth-child(4) { transform: rotate(45deg); }
+.pattern.big .square:nth-child(5) { transform: rotate(60deg); }
+.pattern.big .square:nth-child(6) { transform: rotate(75deg); }
+.pattern.big .square:nth-child(7) { transform: rotate(90deg); }
+.pattern.big .square:nth-child(8) { transform: rotate(105deg); }
+.pattern.big .square:nth-child(9) { transform: rotate(120deg); }
+.pattern.big .square:nth-child(10) { transform: rotate(135deg); }
+.pattern.big .square:nth-child(11) { transform: rotate(150deg); }
+.pattern.big .square:nth-child(12) { transform: rotate(165deg); }
+
+.inner{
+    height: 50%;
+    width: 50%;
+    background-color: #66B032;
+    z-index: 1;
+}
+
+.centre{
+    height: 25%;
+    width: 25%;
+    background-color: #FFDB49;
+    z-index: 3;
+}
+
+.petal2{
+    position: absolute;
+    height: 40%;
+    width: 15%;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    background-color: rgb(0, 0, 0);
+    border-color: black;
+
+    top: 10%;
+    left: 42.5%;
+    transform-origin: bottom center;
+    z-index: 2;
+}
+
+.petal{
+    position: absolute;
+    height: 39.5%;
+    width: 15%;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    background-color: rgb(70, 7, 57);
+    border-color: black;
+
+    top: 10%;
+    left: 42.5%;
+    transform-origin: bottom center;
+    z-index: 2;
+}
+.center-circle {
+    position: absolute;
+    width: 60%;  
+    height: 60%;
+    background: radial-gradient(circle, rgb(197, 129, 178) 20%, rgb(128, 0, 109) 80%);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5; 
+}
+
+.centre img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;   /* adjust size */
+    height: 55%;  /* keep it square */
+    object-fit: cover; /* avoids stretching */
+    border-radius: 50%; /* makes it round like a flower button */
+    z-index: 6; /* keeps it above petals */
+    border: 3% solid rgb(143, 86, 194); /* optional outline */
+    box-shadow: 0 0 10px rgba(0,0,0,0.4); /* soft glow */
+}
+
+.marigold {
+    --radius: 210px;   /* distance from center */
+    --count: 24;       /* number of flowers */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+}
+
+.tiny-square {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: calc(-1 * var(--radius));
+    left: calc(-15px);  /* half of width */
+    transform-origin: center var(--radius);
+}
+
+.tiny-square:nth-child(n) {
+    --i: calc(var(--n, 0));
+    transform: rotate(calc(360deg / var(--count) * (var(--i))));
+}
+
+/* Style for the flower image */
+.tiny-square img {
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+.tiny-flowers {
+    --radius: 140px;   /* distance from center */
+    --count: 12;       /* number of flowers */
+    position: absolute;
+    top: 50%;
+
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+}
+
+.tiny-square {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: calc(-1 * var(--radius));
+    left: calc(-15px);  /* half of width */
+    transform-origin: center var(--radius);
+}
+
+.tiny-square:nth-child(n) {
+    --i: calc(var(--n, 0));
+    transform: rotate(calc(360deg / var(--count) * (var(--i))));
+}
+
+/* Style for the flower image */
+.tiny-square img {
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    border-radius: 6px;
+}
