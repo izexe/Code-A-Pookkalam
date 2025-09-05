@@ -21,7 +21,7 @@ Languages used: HTML, CSS, JavaScript
 
 
 # Screenshots 
-![Screenshot1](Add screenshot 1 here with proper name)
+<img width="975" height= "906" src="https://github.com/izexe/Code-A-Pookkalam/blob/main/Screenshot%202025-09-05%20170033.png" />
 *Add caption explaining what this shows*
 
 
