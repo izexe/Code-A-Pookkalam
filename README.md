@@ -22,4 +22,5 @@ Languages used: HTML, CSS, JavaScript
 
 # Screenshots 
 <img width="975" height= "906" src="https://github.com/izexe/Code-A-Pookkalam/blob/main/Screenshot%202025-09-05%20170033.png" />
+
 Attached image shows a simple pookalam made using HTML, CSS, and JavaScript. The Pookkalam follows a circular, symmetrical layout with concentric rings. Each ring is made up of vibrant colored sections, with intricate patterns in the center and outward. Images of actual flowers found in our surrounding are used in circular pattern to give the vibe of an actual pookalam.
