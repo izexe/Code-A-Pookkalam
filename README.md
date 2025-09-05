@@ -4,22 +4,16 @@
 
 
 ## Basic Details
-### Team Name: [Name]
+Iza K Jamaludheen - SCMS School ofEngineering and Technology [S3-EC]
 
-
-### Team Members
-- Team Lead: [Name] - [College]
 
 ### Project Description
-[2-3 lines about what your project does]
+This project is a digital Pookalam created using HTML, CSS, and JavaScript to celebrate the festival of Onam. The design uses a combination of radial gradients, concentric circles, and repeated patterns of squares and petals to simulate the traditional floral arrangement. Small flower images (like marigold and others) are dynamically placed around rings using CSS transforms, giving the artwork a realistic festive look.
 
 
 ## Technical Details
 ### Technologies/Components Used
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+Languages used: HTML, CSS, JavaScript
 
 
 
