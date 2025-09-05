@@ -48,19 +48,18 @@ h1 {
 }
 
 
-/* Squares in big pattern */
 .pattern .square {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(163, 107, 172, 0.689); /* greenish */
+    background-color: rgba(163, 107, 172, 0.689); 
     opacity: 0.7;
     border-radius: 8px;
 }
 
-/* Rotate 12 big squares */
+
 .pattern .square:nth-child(1) { transform: rotate(0deg); }
 .pattern .square:nth-child(2) { transform: rotate(15deg); }
 .pattern .square:nth-child(3) { transform: rotate(30deg); }
@@ -75,8 +74,8 @@ h1 {
 .pattern .square:nth-child(12) { transform: rotate(165deg); }
 
 .blue {
-    --radius: 300px;   /* distance from center */
-    --count: 24;       /* number of flowers */
+    --radius: 300px;  
+    --count: 24;       
     position: absolute;
     top: 50%;
 
@@ -91,7 +90,7 @@ h1 {
     width: 30px;
     height: 30px;
     top: calc(-1 * var(--radius));
-    left: calc(-15px);  /* half of width */
+    left: calc(-15px);  
     transform-origin: center var(--radius);
 }
 
@@ -100,7 +99,7 @@ h1 {
     transform: rotate(calc(360deg / var(--count) * (var(--i))));
 }
 
-/* Style for the flower image */
+
 .tiny-square img {
     width: 120%;
     height: 120%;
@@ -127,19 +126,17 @@ h1 {
 }
 
 
-/* Squares in big pattern */
 .pattern.big .square {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(218, 18, 204); /* greenish */
+    background-color: rgb(218, 18, 204); 
     opacity: 0.7;
     border-radius: 8px;
 }
 
-/* Rotate 12 big squares */
 .pattern.big .square:nth-child(1) { transform: rotate(0deg); }
 .pattern.big .square:nth-child(2) { transform: rotate(15deg); }
 .pattern.big .square:nth-child(3) { transform: rotate(30deg); }
@@ -211,18 +208,18 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 55%;   /* adjust size */
-    height: 55%;  /* keep it square */
-    object-fit: cover; /* avoids stretching */
-    border-radius: 50%; /* makes it round like a flower button */
-    z-index: 6; /* keeps it above petals */
-    border: 3% solid rgb(143, 86, 194); /* optional outline */
-    box-shadow: 0 0 10px rgba(0,0,0,0.4); /* soft glow */
+    width: 55%;   
+    height: 55%;  
+    object-fit: cover; 
+    border-radius: 50%; 
+    z-index: 6; 
+    border: 3% solid rgb(143, 86, 194);
+    box-shadow: 0 0 10px rgba(0,0,0,0.4); 
 }
 
 .marigold {
-    --radius: 210px;   /* distance from center */
-    --count: 24;       /* number of flowers */
+    --radius: 210px;  
+    --count: 24;       
     position: absolute;
     top: 50%;
     left: 50%;
@@ -236,7 +233,7 @@ h1 {
     width: 30px;
     height: 30px;
     top: calc(-1 * var(--radius));
-    left: calc(-15px);  /* half of width */
+    left: calc(-15px); 
     transform-origin: center var(--radius);
 }
 
@@ -245,7 +242,7 @@ h1 {
     transform: rotate(calc(360deg / var(--count) * (var(--i))));
 }
 
-/* Style for the flower image */
+
 .tiny-square img {
     width: 120%;
     height: 120%;
@@ -255,8 +252,8 @@ h1 {
 
 
 .tiny-flowers {
-    --radius: 140px;   /* distance from center */
-    --count: 12;       /* number of flowers */
+    --radius: 140px;  
+    --count: 12;       
     position: absolute;
     top: 50%;
 
@@ -271,7 +268,7 @@ h1 {
     width: 30px;
     height: 30px;
     top: calc(-1 * var(--radius));
-    left: calc(-15px);  /* half of width */
+    left: calc(-15px); 
     transform-origin: center var(--radius);
 }
 
@@ -280,10 +277,10 @@ h1 {
     transform: rotate(calc(360deg / var(--count) * (var(--i))));
 }
 
-/* Style for the flower image */
 .tiny-square img {
     width: 120%;
     height: 120%;
     object-fit: cover;
     border-radius: 6px;
+
 }
